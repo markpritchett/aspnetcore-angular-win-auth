@@ -1,0 +1,9 @@
+<h1>Values from API</h1>
+
+<ng-template #loading>
+  Loading ...
+</ng-template>
+
+<ul *ngIf="values; else loading">
+  <li *ngFor="let value of values">{{value}}</li>
+</ul>
